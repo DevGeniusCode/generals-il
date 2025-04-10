@@ -1,0 +1,103 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1b1b1b;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    text-align: right;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.navbar {
+    background-color: #333;
+    padding: 10px;
+
+    /*rtl order*/
+    flex-direction: row-reverse;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar li {
+    padding: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background-color: #222;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1); /* מעט לבן */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(src/assets/images/header.png); /* הוספת שכבת לבן */
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text {
+    width: 50%;
+    padding: 20px;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    color: #e14e35; /* Red */
+    border-radius: 10px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* צל */
+
+}
+
+.card-section {
+    display: flex;
+    flex-direction: column;  /* הצגת כרטיסים אחד מתחת לשני */
+    gap: 40px;  /* מרווח בין כרטיסים */
+    margin-top: 40px;
+}
+
+.card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card-image {
+    width: 60%;  /* תמונה תופסת חצי מהכרטיס */
+    border-radius: 10px;
+    object-fit: cover;
+    height: auto;
+}
+
+.card-text {
+    width: 45%; /* טקסט תופס 45% */
+    font-size: 2.2rem;
+}
+
+.card h2 {
+    color: #ff6347;
+}
+
+.card p {
+    color: #fff;
+}
