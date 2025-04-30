@@ -7,6 +7,8 @@ import Guides from './pages/Guides.jsx';
 import GuideViewer from './components/GuideViewer';
 import Resources from './pages/Resources.jsx';
 import SocialMedia from './pages/SocialMedia.jsx';
+import Footer from './components/Footer';
+
 // import Blog from './pages/Blog.jsx';
 import './main.css';
 
@@ -23,6 +25,7 @@ function App() {
                 <Route path="/social-media" element={<SocialMedia />} />
                 {/*<Route path="/blog" element={<Blog />} />*/}
             </Routes>
+            <Footer />
         </Router>
     );
 }

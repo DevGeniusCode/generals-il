@@ -9,7 +9,7 @@
 ## 🔗 תצוגה חיה
 
 🖥️ לינק לאתר:  
-> [https://generals-il.example.com](https://generals-il.example.com)
+> [generals-il.vercel.app](https://generals-il.vercel.app)
 
 ---
 
