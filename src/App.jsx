@@ -4,11 +4,11 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import News from './pages/News';
 import Guides from './pages/Guides.jsx';
-import Guide from './pages/Guide';
+import GuideViewer from './components/GuideViewer';
 import Resources from './pages/Resources.jsx';
 import SocialMedia from './pages/SocialMedia.jsx';
 // import Blog from './pages/Blog.jsx';
-import './index.css';
+import './main.css';
 
 function App() {
     return (
@@ -17,8 +17,8 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/news" element={<News />} />
-                {/*<Route path="/guides" element={<Guides />} />*/}
-                <Route path="/guides/:guideName" element={<Guide />} />
+                <Route path="/guides" element={<Guides />} />
+                <Route path="/guides/:guideName" element={<GuideViewer />} />
                 <Route path="/resources" element={<Resources />} />
                 <Route path="/social-media" element={<SocialMedia />} />
                 {/*<Route path="/blog" element={<Blog />} />*/}
