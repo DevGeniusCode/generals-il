@@ -6,37 +6,37 @@ const tools = [
         name: "GenPatcher",
         description: "תיקוני באגים שמסייעים לשפר את חווית המשחק.",
         downloadLink: "https://link_to_genpatcher",  // קישור להורדה
-        guideLink: "#genpatcher-guide" // קישור למדריך
+        guideLink: "guides/genpatcher" // קישור למדריך
     },
     {
         name: "GameRanger",
         description: "שרת משחקים פופולרי המאפשר לשחק עם חברים ברחבי העולם.",
         downloadLink: "https://www.gameranger.com/",
-        guideLink: "#gameranger-guide"
+        guideLink: "guides/gameranger"
     },
     {
         name: "שרת משחקים - Radmin VPN",
         description: "Radmin VPN מאפשר לך להקים שרת משחקים פרטי עם חברים.",
         downloadLink: "https://www.radmin-vpn.com/",
-        guideLink: "#radmin-vpn-guide"
+        guideLink: "guides/radmin"
     },
     {
         name: "Steam",
         description: "קנה את המשחק בסטים, הפלטפורמה המובילה למשחקים.",
         downloadLink: "https://store.steampowered.com/",
-        guideLink: "#steam-guide"
+        guideLink: "guides/steam"
     },
     {
         name: "DoMiNaToR Map Packs",
         description: "חבילות מפות ששדרגו את חווית המשחק. זמינות להורדה דרך Google Drive.",
         downloadLink: "https://drive.google.com/",
-        guideLink: "#dominators-guide"
+        guideLink: "guides/dominators"
     },
     {
         name: "CNC Maps",
         description: "אוסף מפות ל-CNC שמגוון את חווית המשחק.",
         downloadLink: "https://example.com/maps",
-        guideLink: "#cnc-maps-guide"
+        guideLink: "guides/cnc-maps"
     },
 ];
 
