@@ -381,3 +381,102 @@ body {
 .guide-button:hover {
     background-color: #0056b3;
 }
+
+/* guide.css */
+
+.guide-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #1c1c1c;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.guide-content h1,
+.guide-content h2,
+.guide-content h3 {
+    color: #2c3e50;
+    margin-top: 1.5em;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 0.3em;
+}
+
+.guide-content a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+.guide-content a:hover {
+    text-decoration: underline;
+}
+
+.guide-content ul,
+.guide-content ol {
+    padding-left: 1.5em;
+    margin-top: 1em;
+}
+
+.guide-content li {
+    margin-bottom: 0.5em;
+}
+
+.guide-content p {
+    margin: 1em 0;
+}
+
+.guide-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em 0;
+    border-radius: 4px;
+}
+
+.guide-content blockquote {
+    border-left: 4px solid #007acc;
+    padding-left: 1em;
+    margin: 1em 0;
+    color: #555;
+    font-style: italic;
+}
+
+.guide-content code {
+    background-color: #f4f4f4;
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* מצב כהה */
+@media (prefers-color-scheme: dark) {
+    .guide-content {
+        background-color: #1e1e1e;
+        color: #f0f0f0;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    }
+
+    .guide-content h1,
+    .guide-content h2,
+    .guide-content h3 {
+        color: #f9f9f9;
+        border-bottom: 1px solid #444;
+    }
+
+    .guide-content a {
+        color: #4ea1ff;
+    }
+
+    .guide-content blockquote {
+        border-left: 4px solid #4ea1ff;
+        color: #ddd;
+    }
+
+    .guide-content code {
+        background-color: #333;
+        color: #f0f0f0;
+    }
+}
