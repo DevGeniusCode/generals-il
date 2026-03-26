@@ -15,6 +15,16 @@
 
 > ❗ אם Zero Hour לא מופיע, ודא שיישמת את כל התיקונים הרלוונטיים דרך **GenPatcher** (כולל תיקון Steam/Origin).
 
+### ⚠️ שים לב: בעיית אבטחה בכניסה לאתר (SSL)
+האתר הרשמי של GameRanger אינו מתוחזק באופן שוטף מבחינת אבטחת דפדפנים, ולכן בעת הכניסה אליו אתם עשויים להיתקל בהודעת אזהרה אדומה של הדפדפן (Your connection isn't private).
+
+![GameRanger No Secure Error](/guides/files/gameranger/gameranger-nosecure.png)
+
+
+**אל דאגה, הכלי עדיין בטוח לשימוש. כדי להמשיך להורדה:**
+1. לחצו על כפתור **"מתקדם"** (Advanced) שמופיע בתחתית הודעת השגיאה.
+2. לחצו על הקישור שאומר **"המשך אל gameranger.com (לא בטוח)"** או **"Continue to [www.gameranger.com](https://www.gameranger.com) (unsafe)"**.
+3. האתר ייפתח ותוכלו להוריד את קובץ ההתקנה כרגיל.
 ---
 
 ## ✨ טיפים לשימוש יעיל ב-GameRanger

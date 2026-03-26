@@ -1,6 +1,6 @@
 # מדריך התקנה: Command & Conquer: Generals - Zero Hour (גרסת Steam)
 
-> כל הקישורים נמצאים גם [בדף המשאבים](https://linktr.ee/GeneralsIL)
+> כל הקישורים נמצאים גם [בדף המשאבים](https://generals-il.vercel.app/resources)
 
 ## שלב 1: התקנת משחק הבסיס
 * רכישה והורדה: ודא שהמשחק [נרכש](https://store.steampowered.com/app/2732960/Command__Conquer_Generals_Zero_Hour/) בחנות Steam.

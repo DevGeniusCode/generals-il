@@ -20,6 +20,11 @@
     "guideName": "gameranger"
   },
   {
+    "title": "סוגי מפות במשחק (Map Types)",
+    "description": "הסבר מקיף על סוגי המפות השונים בזیرو האוור - טורנירים, משחקי קבוצות, AOD, ומפות קהילתיות.",
+    "guideName": "map-types"
+  },
+  {
     "title": "משחק ברשת עם Radmin VPN",
     "description": "הסבר על איך להשתמש ב-Radmin VPN להקמת שרת פרטי.",
     "guideName": "radmin-vpn"
