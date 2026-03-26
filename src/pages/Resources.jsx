@@ -5,7 +5,7 @@ const tools = [
     {
         name: "GenPatcher",
         description: "תיקוני באגים שמסייעים לשפר את חווית המשחק.",
-        downloadLink: "https://link_to_genpatcher",  // קישור להורדה
+        downloadLink: "https://legi.cc/genpatcher/",  // קישור להורדה
         guideLink: "guides/genpatcher" // קישור למדריך
     },
     {
@@ -23,19 +23,19 @@ const tools = [
     {
         name: "Steam",
         description: "קנה את המשחק בסטים, הפלטפורמה המובילה למשחקים.",
-        downloadLink: "https://store.steampowered.com/",
+        downloadLink: "https://store.steampowered.com/app/2732960/Command__Conquer_Generals_Zero_Hour/",
         guideLink: "guides/steam"
     },
     {
         name: "DoMiNaToR Map Packs",
         description: "חבילות מפות ששדרגו את חווית המשחק. זמינות להורדה דרך Google Drive.",
-        downloadLink: "https://drive.google.com/",
+        downloadLink: "https://drive.google.com/drive/folders/1tSCKWmz63YP_bT9uwuyGbG41AP_larph",
         guideLink: "guides/dominators"
     },
     {
         name: "CNC Maps",
         description: "אוסף מפות ל-CNC שמגוון את חווית המשחק.",
-        downloadLink: "https://example.com/maps",
+        downloadLink: "https://www.cnclabs.com/maps/generals/",
         guideLink: "guides/cnc-maps"
     },
 ];

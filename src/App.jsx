@@ -1,6 +1,8 @@
+// src/App.jsx
 import React from 'react';
-import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import FloatingSocialSidebar from './components/FloatingSocialSidebar'; // <-- Import Sidebar
 import Home from './pages/Home';
 import News from './pages/News';
 import Guides from './pages/Guides.jsx';
@@ -16,6 +18,7 @@ function App() {
     return (
         <Router>
             <Navbar />
+            <FloatingSocialSidebar /> {}
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/news" element={<News />} />
