@@ -1,6 +1,6 @@
 # מדריך התקנה: Command & Conquer: Generals - Zero Hour (גרסת Steam)
 
-> כל הקישורים נמצאים גם [בדף המשאבים](https://generals-il.vercel.app/resources)
+![Logo](/logo/zerohour_logo_header.png)
 
 ## שלב 1: התקנת משחק הבסיס
 * רכישה והורדה: ודא שהמשחק [נרכש](https://store.steampowered.com/app/2732960/Command__Conquer_Generals_Zero_Hour/) בחנות Steam.
@@ -10,12 +10,16 @@
 ## שלב 2: הגדרת GameRanger (למשחקים בלובי פרטי)
 * הורדה והתקנה: הורד את הקובץ מאתר[ GameRanger](https://www.gameranger.com/), התקן את התוכנה ופתח חשבון חדש.
 * שימוש: התוכנה מאפשרת הצטרפות לחדרים (Rooms) למשחק ברשת מקומית וירטואלית.
-* הערה חשובה: זיהוי המשחק ב-GameRanger לא יעבוד עד לסיום שלב 4. לאחר ביצוע התיקונים ב-GenPatcher, יש לחזור ל-GameRanger ולבחור את המשחק בתפריט My Games.
+  * הערה חשובה: זיהוי המשחק ב-GameRanger לא יעבוד עד לסיום שלב 4. לאחר ביצוע התיקונים ב-GenPatcher, יש לחזור ל-GameRanger ולבחור את המשחק בתפריט My Games.
+
+> 💡 לחצו [כאן](/guides/gameranger) כדי לעבור למדריך המפורט של GameRanger כולל טיפים.
 
 ## שלב 3: חיבור ל-Generals Online (למשחק בשרתים גלובליים)
 * התקנה: הורד והתקן את הלקוח של[ Generals Online](https://www.playgenerals.online/#download).
 * גישה למולטיפלייר: בתוך Zero Hour, היכנס לתפריט Multiplayer ואז ל-Online.
 * אימות חשבון: בחלון הדפדפן שייפתח, התחבר באמצעות חשבון ה-Discord או ה-Steam שלך כדי לקשר את הזהות לשרתים.
+
+> 💡 לחצו [כאן](guides/generals-online) כדי לעבור למדריך המפורט של Generals Online כולל טיפים.
 
 ## שלב 4: אופטימיזציה ותיקונים (GenPatcher & GenTool)
 * התקנת GenPatcher: הורד והרץ את [הכלי](https://legi.cc/genpatcher/).
@@ -23,6 +27,8 @@
 * התקנת GenTool: מתוך ממשק ה-GenPatcher, התקן את GenTool. כלי זה חיוני למניעת צ'יטים וייצוב קצב הפריימים (FPS).
   ![image](/guides/files/genpathcer/genpathcer-home.png)
 
+> 💡 לחצו [כאן](guides/genpatcher) כדי לעבור למדריך המפורט של GenPatcher כולל טיפים.
+  
 ## שלב 5: כלים נוספים (דרך GenPatcher)
 * התקנת עזרים: דרך הממשק של GenPatcher ניתן להתקין כלים נוספים לשיפור השליטה והנוחות.
 * מקשי קיצור (Hotkeys) חזותיים: ניתן להתקין מוד המוסיף את אותיות המקלדת הרלוונטיות ישירות על גבי התמונות של הכלים והמבנים בממשק המשחק, לשליטה מהירה ואינטואיטיבית יותר.
