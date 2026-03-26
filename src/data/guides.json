@@ -1,0 +1,42 @@
+[
+  {
+    "title": "מדריך התקנה ראשי (גרסת Steam)",
+    "description": "המדריך המלא והרשמי להתקנת המשחק בגרסת סטים, כולל תיקונים הכרחיים להפעלתו.",
+    "guideName": "steam-installation-main"
+  },
+  {
+    "title": "הורדת GenPatcher",
+    "description": "מדריך צעד אחרי צעד כיצד להוריד ולהתקין את GenPatcher.",
+    "guideName": "genpatcher"
+  },
+  {
+    "title": "Generals Online",
+    "description": "שחקו C&C Generals Zero Hour ברשת בקלות ובמהירות דרך פלטפורמה ייעודית.",
+    "guideName": "generals-online"
+  },
+  {
+    "title": "הורדת GameRanger",
+    "description": "הוראות התקנה וטיפים לשימוש ב-GameRanger.",
+    "guideName": "gameranger"
+  },
+  {
+    "title": "משחק ברשת עם Radmin VPN",
+    "description": "הסבר על איך להשתמש ב-Radmin VPN להקמת שרת פרטי.",
+    "guideName": "radmin-vpn"
+  },
+  {
+    "title": "קניית המשחק בסטים",
+    "description": "צעד אחרי צעד איך לקנות את המשחק בסטים.",
+    "guideName": "steam"
+  },
+  {
+    "title": "שימוש ב-DoMiNaToR Map Packs",
+    "description": "הסבר על איך להוריד ולהתקין את חבילות המפות.",
+    "guideName": "dominators"
+  },
+  {
+    "title": "CNC Maps",
+    "description": "אתר מצוין להורדת מפות קהילתיות.",
+    "guideName": "cnc-maps"
+  }
+]

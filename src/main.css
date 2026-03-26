@@ -192,6 +192,10 @@ body {
     box-shadow: var(--shadow-base);
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 /* Tactical glowing top border on cards */
@@ -253,15 +257,30 @@ body {
 /* =========================================
    BUTTONS (Tactical UI)
    ========================================= */
-.buttons { display: flex; gap: 15px; flex-wrap: wrap; margin-top: 20px;}
+.buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: auto;
+    padding-top: 20px;
+}
 
 .button, .social-card a {
-    display: inline-block;
-    background-color: transparent;
-    color: var(--text-heading);
-    padding: 10px 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    /*  Forces buttons to share horizontal space equally */
+    flex: 1;
+    min-width: 120px; /* Ensures graceful stacking on very tiny screens */
+
+    /*  Solid Fill Styling */
+    background-color: var(--accent-red);
+    color: #ffffff;
     border: 2px solid var(--accent-red);
-    border-radius: 4px;
+    padding: 12px 16px;
+    border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
@@ -269,20 +288,32 @@ body {
     cursor: pointer;
     transition: var(--transition-fast);
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
 
-.button:hover, .social-card a:hover {
-    background-color: var(--accent-red);
-    color: #fff;
-    box-shadow: 0 0 10px rgba(229, 57, 53, 0.6);
-    transform: scale(1.02);
+button:hover, .social-card a:hover {
+    background-color: var(--accent-red-hover);
+    border-color: var(--accent-red-hover);
+    color: #ffffff;
+    box-shadow: 0 0 12px rgba(229, 57, 53, 0.6);
+    transform: translateY(-2px);
 }
 
-.button:active, .social-card a:active { transform: scale(0.98); }
+.button:active, .social-card a:active {
+    transform: translateY(1px);
+}
 
-.download-button { border-color: var(--accent-olive); color: var(--accent-desert); }
-.download-button:hover { background-color: var(--accent-olive); color: #fff; box-shadow: 0 0 10px rgba(75, 83, 32, 0.8); }
+/* Specific Download/External Button (Olive Green Solid) */
+.download-button {
+    background-color: var(--accent-olive);
+    border-color: var(--accent-olive);
+}
 
+.download-button:hover {
+    background-color: #5c6628; /* Lighter olive on hover */
+    border-color: #5c6628;
+    box-shadow: 0 0 12px rgba(75, 83, 32, 0.8);
+}
 /* =========================================
    SOCIAL MEDIA & LINK TREE
    ========================================= */
@@ -371,11 +402,14 @@ body {
 }
 
 .guide-content img {
+    max-width: 100%; /* Forces image to never exceed its parent container */
+    height: auto; /* Maintains the original aspect ratio without stretching */
+    display: block;
+    margin: 30px auto; /* Centers the image with breathing room */
     border-radius: 8px;
     border: 2px solid var(--border-subtle);
     box-shadow: var(--shadow-base);
-    margin: 20px auto;
-    display: block;
+    box-sizing: border-box; /* Ensures borders don't push it past 100% width */
 }
 
 /* =========================================
@@ -480,4 +514,30 @@ body {
     .footer {
         padding-bottom: 80px;
     }
+}
+
+/* =========================================
+   PRIMARY HERO CTA BUTTON
+   ========================================= */
+.button-primary {
+    background-color: var(--accent-red);
+    color: #ffffff;
+    padding: 15px 35px;
+    font-size: 1.2rem;
+    border: none;
+    box-shadow: 0 4px 15px rgba(229, 57, 53, 0.4);
+    animation: pulseGlow 2s infinite;
+}
+
+.button-primary:hover {
+    background-color: var(--accent-red-hover);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(229, 57, 53, 0.6);
+    animation: none; /* Stop pulsing on hover */
+}
+
+@keyframes pulseGlow {
+    0% { box-shadow: 0 0 0 0 rgba(229, 57, 53, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(229, 57, 53, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(229, 57, 53, 0); }
 }
