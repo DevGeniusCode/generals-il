@@ -1,6 +1,7 @@
 // src/App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import Navbar from './components/Navbar';
 import FloatingSocialSidebar from './components/FloatingSocialSidebar'; // <-- Import Sidebar
 import Home from './pages/Home';
@@ -16,20 +17,22 @@ import './main.css';
 
 function App() {
     return (
-        <Router>
-            <Navbar />
-            <FloatingSocialSidebar /> {}
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/news" element={<News />} />
-                <Route path="/guides" element={<Guides />} />
-                <Route path="/guides/:guideName" element={<GuideViewer />} />
-                <Route path="/resources" element={<Resources />} />
-                <Route path="/social-media" element={<SocialMedia />} />
-                {/*<Route path="/blog" element={<Blog />} />*/}
-            </Routes>
-            <Footer />
-        </Router>
+        <HelmetProvider>
+            <Router>
+                <Navbar />
+                <FloatingSocialSidebar /> {}
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/news" element={<News />} />
+                    <Route path="/guides" element={<Guides />} />
+                    <Route path="/guides/:guideName" element={<GuideViewer />} />
+                    <Route path="/resources" element={<Resources />} />
+                    <Route path="/social-media" element={<SocialMedia />} />
+                    {/*<Route path="/blog" element={<Blog />} />*/}
+                </Routes>
+                <Footer />
+            </Router>
+        </HelmetProvider>
     );
 }
 

@@ -2,10 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import SEO from './SEO';
+import guidesData from '../data/guides.json'; // Import our centralized data
 
 function GuideViewer() {
     const { guideName } = useParams();
     const [content, setContent] = useState('');
+    // Find the specific guide metadata based on the URL
+    const activeGuide = guidesData.find(g => g.guideName === guideName);
 
     useEffect(() => {
         fetch(`/guides/${guideName}.md`)
@@ -37,6 +41,14 @@ function GuideViewer() {
 
     return (
         <div className="guide-content container" dir="rtl">
+            {/* Inject dynamic metadata for the browser */}
+            {activeGuide && (
+                <SEO
+                    title={activeGuide.title}
+                    description={activeGuide.description}
+                    path={`/guides/${guideName}`}
+                />
+            )}
             <ReactMarkdown
                 remarkPlugins={[remarkGfm]} // מאפשר תמיכה בטבלאות
                 components={customRenderers}
