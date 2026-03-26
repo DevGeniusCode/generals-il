@@ -541,3 +541,53 @@ button:hover, .social-card a:hover {
     70% { box-shadow: 0 0 0 10px rgba(229, 57, 53, 0); }
     100% { box-shadow: 0 0 0 0 rgba(229, 57, 53, 0); }
 }
+
+/* =========================================
+   HERO CTA CONTAINER & SECONDARY BUTTON
+   ========================================= */
+
+/* Update the CTA container to be a vertical flex column */
+.hero-cta {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Center-aligns the buttons horizontally */
+    gap: 15px; /* Adds space between the two buttons */
+}
+
+/* Ensure all buttons in the hero section have a minimum width */
+.hero-cta .button {
+    min-width: 320px;
+    box-sizing: border-box; /* Ensures padding doesn't break alignment */
+}
+
+/* New style for the WhatsApp secondary button */
+.button-secondary.whatsapp {
+    background-color: #25D366; /* Official WhatsApp Green */
+    border: 2px solid #25D366;
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+.button-secondary.whatsapp:hover {
+    background-color: #128C7E; /* Darker WhatsApp Green for hover */
+    border-color: #128C7E;
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* Add a gap for the icon inside the button */
+.button {
+    gap: 10px; /* This will add space between the icon and text */
+}
+
+/* Responsive adjustment for mobile */
+@media (max-width: 768px) {
+    .hero-cta {
+        align-items: center; /* Revert to centered alignment on mobile */
+    }
+
+    .hero-cta .button {
+        min-width: 100%; /* Make buttons full-width on small screens */
+    }
+}

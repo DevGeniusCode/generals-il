@@ -11,7 +11,7 @@ export const socialLinks = [
     {
         name: 'WhatsApp',
         icon: faWhatsapp,
-        url: 'https://chat.whatsapp.com/K8zgB2whl6Q5mV6Vmqa6Kz',
+        url: 'https://chat.whatsapp.com/FOhkgoatLh42zbjsb6jpGZ?mode=hqrt2',
         color: '#25D366'
     },
     {
