@@ -19,7 +19,7 @@
 * גישה למולטיפלייר: בתוך Zero Hour, היכנס לתפריט Multiplayer ואז ל-Online.
 * אימות חשבון: בחלון הדפדפן שייפתח, התחבר באמצעות חשבון ה-Discord או ה-Steam שלך כדי לקשר את הזהות לשרתים.
 
-> 💡 לחצו [כאן](guides/generals-online) כדי לעבור למדריך המפורט של Generals Online כולל טיפים.
+> 💡 לחצו [כאן](/guides/generals-online) כדי לעבור למדריך המפורט של Generals Online כולל טיפים.
 
 ## שלב 4: אופטימיזציה ותיקונים (GenPatcher & GenTool)
 * התקנת GenPatcher: הורד והרץ את [הכלי](https://legi.cc/genpatcher/).
@@ -27,7 +27,7 @@
 * התקנת GenTool: מתוך ממשק ה-GenPatcher, התקן את GenTool. כלי זה חיוני למניעת צ'יטים וייצוב קצב הפריימים (FPS).
   ![image](/guides/files/genpathcer/genpathcer-home.png)
 
-> 💡 לחצו [כאן](guides/genpatcher) כדי לעבור למדריך המפורט של GenPatcher כולל טיפים.
+> 💡 לחצו [כאן](/guides/genpatcher) כדי לעבור למדריך המפורט של GenPatcher כולל טיפים.
   
 ## שלב 5: כלים נוספים (דרך GenPatcher)
 * התקנת עזרים: דרך הממשק של GenPatcher ניתן להתקין כלים נוספים לשיפור השליטה והנוחות.
