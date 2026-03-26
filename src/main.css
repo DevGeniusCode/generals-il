@@ -412,6 +412,56 @@ button:hover, .social-card a:hover {
     box-sizing: border-box; /* Ensures borders don't push it past 100% width */
 }
 
+
+/* --- MARKDOWN: Table Styling --- */
+
+/* Wrapper for horizontal scrolling on mobile */
+.guide-content .table-wrapper {
+    overflow-x: auto;
+    margin: 2em 0;
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+.guide-content table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 500px; /* Ensures even small tables can demonstrate scrolling */
+}
+
+.guide-content th,
+.guide-content td {
+    padding: 12px 15px;
+    text-align: right; /* RTL Alignment */
+    vertical-align: middle;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+/* Remove bottom border from the very last row for a cleaner look */
+.guide-content tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.guide-content thead {
+    background-color: rgba(75, 83, 32, 0.2); /* Olive Tint Header */
+}
+
+.guide-content th {
+    color: var(--accent-desert);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom-width: 2px; /* Thicker border for the header */
+}
+
+.guide-content tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.03); /* Zebra striping */
+}
+
+.guide-content tbody tr:hover {
+    background-color: rgba(229, 57, 53, 0.1); /* Red tint on hover */
+}
 /* =========================================
    FOOTER
    ========================================= */
@@ -590,4 +640,135 @@ button:hover, .social-card a:hover {
     .hero-cta .button {
         min-width: 100%; /* Make buttons full-width on small screens */
     }
+}
+
+/* =========================================
+   NEWS PAGE: STRATEGIC BANNER
+   ========================================= */
+.news-page { padding-top: 20px; }
+
+.news-banner-container {
+    margin-bottom: 50px;
+}
+
+.strategic-banner {
+    display: block;
+    background: linear-gradient(135deg, rgba(229, 57, 53, 0.1) 0%, rgba(16, 18, 16, 0.9) 100%);
+    border: 2px solid var(--accent-red);
+    border-radius: 8px;
+    padding: 30px;
+    text-decoration: none;
+    color: var(--text-main);
+    transition: var(--transition-smooth);
+    box-shadow: var(--shadow-base);
+    position: relative;
+    overflow: hidden;
+}
+
+.strategic-banner::before {
+    content: ''; position: absolute; top: 0; right: 0; width: 6px; height: 100%;
+    background: var(--accent-red);
+}
+
+.strategic-banner:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-glow);
+    background: linear-gradient(135deg, rgba(229, 57, 53, 0.2) 0%, rgba(16, 18, 16, 0.95) 100%);
+}
+
+.banner-content h2 { color: var(--text-heading); margin-top: 0; font-size: 1.8rem; }
+.banner-content p { color: var(--text-muted); font-size: 1.1rem; margin-bottom: 15px; }
+.banner-cta { color: var(--accent-red); font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+.strategic-banner:hover .banner-cta { color: var(--accent-red-hover); text-shadow: 0 0 8px rgba(229, 57, 53, 0.5); }
+
+/* =========================================
+   NEWS PAGE: RTL VERTICAL TIMELINE
+   ========================================= */
+.timeline-header { color: var(--accent-desert); border-bottom: 1px solid var(--border-subtle); padding-bottom: 10px; margin-bottom: 30px;}
+
+.timeline-container {
+    position: relative;
+    padding-right: 40px; /* Space for the right-side line */
+}
+
+/* The Vertical Line (Right-Aligned for RTL) */
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0;
+    right: 15px; /* Anchored to the right */
+    width: 2px;
+    background: var(--border-subtle);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+/* The Node/Dot on the Line */
+.timeline-dot {
+    position: absolute;
+    top: 5px;
+    right: -31px; /* Aligns the dot perfectly over the line */
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--accent-red);
+    box-shadow: 0 0 8px var(--accent-red);
+    border: 3px solid var(--bg-base);
+}
+
+.timeline-content {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 20px 25px;
+    box-shadow: var(--shadow-base);
+    transition: var(--transition-fast);
+}
+
+/* Styling for parsed external links in timeline */
+.timeline-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 6px 12px;
+    background-color: rgba(75, 83, 32, 0.3); /* Olive tint */
+    border: 1px solid var(--border-subtle);
+    border-radius: 4px;
+    color: var(--accent-desert);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: var(--transition-fast);
+}
+
+.timeline-link:hover {
+    background-color: var(--accent-olive);
+    color: #ffffff;
+    border-color: var(--accent-desert);
+}
+
+.timeline-content:hover {
+    border-color: var(--accent-desert);
+    transform: translateX(-5px); /* Pops out slightly to the left in RTL */
+}
+
+.timeline-meta {
+    display: flex; gap: 15px; margin-bottom: 10px; font-size: 0.9rem;
+}
+
+.timeline-date { color: var(--accent-desert); font-weight: bold; }
+.timeline-category { color: var(--text-muted); background: rgba(255,255,255,0.05); padding: 2px 8px; border-radius: 4px; }
+
+.timeline-content h3 { color: var(--text-heading); margin: 0 0 10px 0; font-size: 1.4rem; }
+.timeline-content p { margin: 0; color: var(--text-muted); line-height: 1.6; }
+
+/* Responsive Timeline */
+@media (max-width: 768px) {
+    .timeline-container { padding-right: 30px; }
+    .timeline-container::before { right: 10px; }
+    .timeline-dot { right: -26px; width: 12px; height: 12px; }
+    .strategic-banner { padding: 20px; }
+    .banner-content h2 { font-size: 1.4rem; }
 }
