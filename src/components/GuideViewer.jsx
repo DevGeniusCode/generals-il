@@ -61,14 +61,6 @@ function GuideViewer() {
                 />
             )}
 
-            {/* Legacy Disclaimer specifically for original manual parts */}
-            {isManual && (
-                <div className="legacy-disclaimer">
-                    <strong>⚠️ הערה היסטורית: מסמך מ-2003</strong>
-                    אתם קוראים גרסה דיגיטלית של חוברת ההדרכה המקורית של המשחק. חלק מהמידע הטכני כאן (כמו דרישות מערכת, GameSpy או חיבורי מודם) מיושן. להתקנה ומשחק ברשת כיום, אנא השתמשו במדריכים המודרניים שלנו.
-                </div>
-            )}
-
             <ReactMarkdown
                 remarkPlugins={[remarkGfm]}
                 rehypePlugins={[rehypeRaw]} // <-- 2. Inject the HTML parser here

@@ -1,97 +1,106 @@
 [
   {
-    "title": "מדריך התקנה ראשי (גרסת Steam)",
-    "description": "המדריך המלא והרשמי להתקנת המשחק בגרסת סטים, כולל תיקונים הכרחיים להפעלתו.",
+    "title": "מדריך התקנה (Steam)",
+    "description": "המדריך המלא להתקנת המשחק בסטים, כולל תיקונים הכרחיים להפעלתו במערכות מודרניות.",
     "guideName": "steam-installation-main",
-    "category": "general"
+    "category": "general",
+    "subCategory": "technical"
   },
   {
     "title": "מדריך GenPatcher",
-    "description": "מדריך צעד אחרי צעד כיצד להוריד ולהתקין את GenPatcher.",
+    "description": "הכלי ההכרחי לתיקון באגים, שיפור גרפיקה והתאמת המשחק למסכים רחבים.",
     "guideName": "genpatcher",
-    "category": "general"
+    "category": "general",
+    "subCategory": "technical"
   },
   {
-    "title": "מדריך Generals Online",
-    "description": "שחקו C&C Generals Zero Hour ברשת בקלות ובמהירות דרך פלטפורמה ייעודית.",
-    "guideName": "generals-online",
-    "category": "general"
-  },
-  {
-    "title": "מדריך GameRanger",
-    "description": "הוראות התקנה וטיפים לשימוש ב-GameRanger.",
-    "guideName": "gameranger",
-    "category": "general"
-  },
-  {
-    "title": "סוגי מפות במשחק (Map Types)",
-    "description": "הסבר מקיף על סוגי המפות השונים בZero Hour - טורנירים, משחקי קבוצות, AOD, ומפות קהילתיות.",
-    "guideName": "map-types",
-    "category": "general"
-  },
-  {
-    "title": "משחק ברשת עם Radmin VPN",
-    "description": "הסבר על איך להשתמש ב-Radmin VPN להקמת שרת פרטי.",
-    "guideName": "radmin-vpn",
-    "category": "general"
-  },
-  {
-    "title": "קניית המשחק בסטים",
-    "description": "צעד אחרי צעד איך לקנות את המשחק בסטים.",
+    "title": "קניית המשחק ב-Steam",
+    "description": "מדריך פשוט לרכישת חבילת C&C Ultimate Collection הרשמית.",
     "guideName": "steam",
-    "category": "general"
+    "category": "general",
+    "subCategory": "technical"
   },
   {
-    "title": "שימוש ב-DoMiNaToR Map Packs",
-    "description": "הסבר על איך להוריד ולהתקין את חבילות המפות.",
+    "title": "Generals Online",
+    "description": "הפלטפורמה המובילה למשחקי רשת, טורנירים ודירוג שחקנים (Ladder).",
+    "guideName": "generals-online",
+    "category": "general",
+    "subCategory": "multiplayer"
+  },
+  {
+    "title": "GameRanger",
+    "description": "הדרך הקלאסית והפשוטה למצוא חדרים ולשחק עם חברים ברשת.",
+    "guideName": "gameranger",
+    "category": "general",
+    "subCategory": "multiplayer"
+  },
+  {
+    "title": "Radmin VPN",
+    "description": "יצירת רשת מקומית (LAN) וירטואלית למשחק ישיר ללא שרתים חיצוניים.",
+    "guideName": "radmin-vpn",
+    "category": "general",
+    "subCategory": "multiplayer"
+  },
+  {
+    "title": "סוגי מפות (Map Types)",
+    "description": "סקירה של סוגי המפות: טורנירים, מפות קבוצות, AOD ומפות קהילתיות.",
+    "guideName": "map-types",
+    "category": "general",
+    "subCategory": "maps"
+  },
+  {
+    "title": "חבילות המפות של DoMiNaToR",
+    "description": "הורדה והתקנה של חבילות המפות המאוזנות והפופולריות ביותר בקהילה.",
     "guideName": "dominators",
-    "category": "general"
+    "category": "general",
+    "subCategory": "maps"
   },
   {
     "title": "CNC Maps",
-    "description": "אתר מצוין להורדת מפות קהילתיות.",
+    "description": "מאגר חיצוני עצום להורדת אלפי מפות ושינויים שיצרו שחקנים.",
     "guideName": "cnc-maps",
-    "category": "general"
+    "category": "general",
+    "subCategory": "maps"
   },
   {
-    "title": "חלק 1: מבוא והתקנה",
-    "description": "הקדמה למשחק, סיפור המסגרת והוראות ההתקנה המקוריות מ-2003.",
+    "title": "1. מבוא והתקנה",
+    "description": "הקדמה וסיפור המסגרת.",
     "guideName": "manual-part1-tech",
     "category": "manual"
   },
   {
-    "title": "חלק 2: ממשק ושליטה",
-    "description": "הכרת שדה הקרב, ממשק המשתמש (HUD) ושליטה בסיסית בכוחות.",
+    "title": "2. ממשק ושליטה",
+    "description": "הכרת ה-HUD ושליטה בכוחות.",
     "guideName": "manual-part2-controls",
     "category": "manual"
   },
   {
-    "title": "חלק 3: התחברות ומשחק ברשת",
-    "description": "מדריך מפורט על הגדרות החיבור, הצטרפות לשרתים ומשחק אונליין מול שחקנים אחרים.",
+    "title": "3. משחק ברשת",
+    "description": "הגדרות חיבור ושרתים.",
     "guideName": "manual-part3-network",
     "category": "manual"
   },
   {
-    "title": "חלק 4: צבא ארה\"ב (USA)",
-    "description": "פירוט מלא על יחידות, מבנים וטקטיקות של צבא ארצות הברית.",
+    "title": "4. צבא ארה\"ב (USA)",
+    "description": "יחידות וטקטיקות ארה\"ב.",
     "guideName": "manual-part4-usa",
     "category": "manual"
   },
   {
-    "title": "חלק 5: צבא סין (China)",
-    "description": "פירוט מלא על יחידות, מבנים וטקטיקות של צבא סין.",
+    "title": "5. צבא סין (China)",
+    "description": "יחידות וטקטיקות סין.",
     "guideName": "manual-part5-china",
     "category": "manual"
   },
   {
-    "title": "חלק 6: צבא ה-GLA",
-    "description": "פירוט מלא על יחידות, מבנים וטקטיקות של צבא השחרור העולמי.",
+    "title": "6. צבא ה-GLA",
+    "description": "יחידות וטקטיקות ה-GLA.",
     "guideName": "manual-part6-gla",
     "category": "manual"
   },
   {
-    "title": "חלק 7: קרדיטים ונספחים",
-    "description": "רשימת הקרדיטים המקורית של מפתחי המשחק ב-EA Pacific.",
+    "title": "7. קרדיטים",
+    "description": "יוצרי המשחק המקורי.",
     "guideName": "manual-part7-credits",
     "category": "manual"
   }
