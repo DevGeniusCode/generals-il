@@ -2,25 +2,39 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
+
+// Components
+import ScrollToTop from './components/ScrollToTop';
 import Navbar from './components/Navbar';
-import FloatingSocialSidebar from './components/FloatingSocialSidebar'; // <-- Import Sidebar
+import Breadcrumbs from './components/Breadcrumbs'; // <-- MUST BE IMPORTED
+import FloatingSocialSidebar from './components/FloatingSocialSidebar';
+import BackToTop from './components/BackToTop';
+import Footer from './components/Footer';
+
+// Pages
 import Home from './pages/Home';
 import News from './pages/News';
 import Guides from './pages/Guides.jsx';
 import GuideViewer from './components/GuideViewer';
 import Resources from './pages/Resources.jsx';
 import SocialMedia from './pages/SocialMedia.jsx';
-import Footer from './components/Footer';
 
-// import Blog from './pages/Blog.jsx';
 import './main.css';
 
 function App() {
     return (
         <HelmetProvider>
             <Router>
+                <ScrollToTop />
+
                 <Navbar />
-                <FloatingSocialSidebar /> {}
+
+                {/* INJECTION POINT: Must be inside Router, under Navbar */}
+                <Breadcrumbs />
+
+                <FloatingSocialSidebar />
+                <BackToTop />
+
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/news" element={<News />} />
@@ -28,8 +42,8 @@ function App() {
                     <Route path="/guides/:guideName" element={<GuideViewer />} />
                     <Route path="/resources" element={<Resources />} />
                     <Route path="/social-media" element={<SocialMedia />} />
-                    {/*<Route path="/blog" element={<Blog />} />*/}
                 </Routes>
+
                 <Footer />
             </Router>
         </HelmetProvider>

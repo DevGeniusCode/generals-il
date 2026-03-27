@@ -924,3 +924,117 @@ button:hover, .social-card a:hover {
         width: 100%;
     }
 }
+
+/* =========================================
+   BREADCRUMBS (Navigation Path)
+   ========================================= */
+.breadcrumbs {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 25px 20px 5px;
+    font-size: 1rem;
+    color: var(--text-muted);
+}
+
+.breadcrumb-item {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-link,
+.breadcrumb-current {
+    display: inline-block;
+    line-height: 1; /* Forces consistent height across different elements */
+}
+
+.breadcrumb-link {
+    color: var(--accent-desert);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition-fast);
+}
+
+.breadcrumb-link:hover {
+    color: var(--accent-red);
+    text-decoration: underline;
+}
+
+.breadcrumb-separator {
+    margin: 0 10px;
+    color: var(--border-subtle);
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    /* Optical adjustment to center the character precisely */
+    position: relative;
+    top: 1px;
+}
+
+.breadcrumb-current {
+    color: var(--text-heading);
+    font-weight: bold;
+}
+/* =========================================
+   BACK TO TOP (FAB)
+   ========================================= */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    left: 30px; /* Positioned on the left for RTL context */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--accent-red);
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    background-color: var(--accent-red-hover);
+    transform: scale(1.1) translateY(0);
+    box-shadow: 0 0 15px rgba(229, 57, 53, 0.6);
+}
+
+@media (max-width: 768px) {
+    .back-to-top {
+        bottom: 85px; /* Pushed up to avoid colliding with mobile social bar */
+        left: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+}
+
+/* =========================================
+   STICKY NAVBAR REFINEMENT
+   ========================================= */
+/* Target the existing .navbar class to enforce strict stickiness and depth */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1050; /* Super high z-index to stay above sidebars and FABs */
+    background-color: rgba(16, 18, 16, 0.98); /* Ensure it's opaque enough */
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8); /* Stronger shadow to pop out */
+}

@@ -94,6 +94,13 @@ function GuideViewer() {
                     )}
                 </div>
             )}
+
+            {/* Contextual Back Button (Appears on ALL guides) */}
+            <div className="contextual-back" style={{ marginTop: '50px', paddingTop: '20px', borderTop: '1px solid var(--border-subtle)', textAlign: 'center' }}>
+                <Link to="/guides" className="button download-button" style={{ width: '100%', maxWidth: '300px' }}>
+                    חזרה לרשימת המדריכים
+                </Link>
+            </div>
         </div>
     );
 }
