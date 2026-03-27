@@ -2,46 +2,97 @@
   {
     "title": "מדריך התקנה ראשי (גרסת Steam)",
     "description": "המדריך המלא והרשמי להתקנת המשחק בגרסת סטים, כולל תיקונים הכרחיים להפעלתו.",
-    "guideName": "steam-installation-main"
+    "guideName": "steam-installation-main",
+    "category": "general"
   },
   {
     "title": "מדריך GenPatcher",
     "description": "מדריך צעד אחרי צעד כיצד להוריד ולהתקין את GenPatcher.",
-    "guideName": "genpatcher"
+    "guideName": "genpatcher",
+    "category": "general"
   },
   {
     "title": "מדריך Generals Online",
     "description": "שחקו C&C Generals Zero Hour ברשת בקלות ובמהירות דרך פלטפורמה ייעודית.",
-    "guideName": "generals-online"
+    "guideName": "generals-online",
+    "category": "general"
   },
   {
     "title": "מדריך GameRanger",
     "description": "הוראות התקנה וטיפים לשימוש ב-GameRanger.",
-    "guideName": "gameranger"
+    "guideName": "gameranger",
+    "category": "general"
   },
   {
     "title": "סוגי מפות במשחק (Map Types)",
-    "description": "הסבר מקיף על סוגי המפות השונים בזیرو האוור - טורנירים, משחקי קבוצות, AOD, ומפות קהילתיות.",
-    "guideName": "map-types"
+    "description": "הסבר מקיף על סוגי המפות השונים בZero Hour - טורנירים, משחקי קבוצות, AOD, ומפות קהילתיות.",
+    "guideName": "map-types",
+    "category": "general"
   },
   {
     "title": "משחק ברשת עם Radmin VPN",
     "description": "הסבר על איך להשתמש ב-Radmin VPN להקמת שרת פרטי.",
-    "guideName": "radmin-vpn"
+    "guideName": "radmin-vpn",
+    "category": "general"
   },
   {
     "title": "קניית המשחק בסטים",
     "description": "צעד אחרי צעד איך לקנות את המשחק בסטים.",
-    "guideName": "steam"
+    "guideName": "steam",
+    "category": "general"
   },
   {
     "title": "שימוש ב-DoMiNaToR Map Packs",
     "description": "הסבר על איך להוריד ולהתקין את חבילות המפות.",
-    "guideName": "dominators"
+    "guideName": "dominators",
+    "category": "general"
   },
   {
     "title": "CNC Maps",
     "description": "אתר מצוין להורדת מפות קהילתיות.",
-    "guideName": "cnc-maps"
+    "guideName": "cnc-maps",
+    "category": "general"
+  },
+  {
+    "title": "חלק 1: מבוא והתקנה",
+    "description": "הקדמה למשחק, סיפור המסגרת והוראות ההתקנה המקוריות מ-2003.",
+    "guideName": "manual-part1-tech",
+    "category": "manual"
+  },
+  {
+    "title": "חלק 2: ממשק ושליטה",
+    "description": "הכרת שדה הקרב, ממשק המשתמש (HUD) ושליטה בסיסית בכוחות.",
+    "guideName": "manual-part2-controls",
+    "category": "manual"
+  },
+  {
+    "title": "חלק 3: התחברות ומשחק ברשת",
+    "description": "מדריך מפורט על הגדרות החיבור, הצטרפות לשרתים ומשחק אונליין מול שחקנים אחרים.",
+    "guideName": "manual-part3-network",
+    "category": "manual"
+  },
+  {
+    "title": "חלק 4: צבא ארה\"ב (USA)",
+    "description": "פירוט מלא על יחידות, מבנים וטקטיקות של צבא ארצות הברית.",
+    "guideName": "manual-part4-usa",
+    "category": "manual"
+  },
+  {
+    "title": "חלק 5: צבא סין (China)",
+    "description": "פירוט מלא על יחידות, מבנים וטקטיקות של צבא סין.",
+    "guideName": "manual-part5-china",
+    "category": "manual"
+  },
+  {
+    "title": "חלק 6: צבא ה-GLA",
+    "description": "פירוט מלא על יחידות, מבנים וטקטיקות של צבא השחרור העולמי.",
+    "guideName": "manual-part6-gla",
+    "category": "manual"
+  },
+  {
+    "title": "חלק 7: קרדיטים ונספחים",
+    "description": "רשימת הקרדיטים המקורית של מפתחי המשחק ב-EA Pacific.",
+    "guideName": "manual-part7-credits",
+    "category": "manual"
   }
 ]

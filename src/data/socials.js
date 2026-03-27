@@ -28,4 +28,4 @@ export const socialLinks = [
     }
 ];
 
-export const linkTreeUrl = 'https://linktr.ee/GeneralsIL';
+export const linkWebUrl = 'https://generals-il.vercel.app/';

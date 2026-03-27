@@ -2,13 +2,13 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLink, faCopy } from '@fortawesome/free-solid-svg-icons';
-import { socialLinks, linkTreeUrl } from '../data/socials'; // <-- Import centralized data
+import { socialLinks, linkWebUrl } from '../data/socials'; // <-- Import centralized data
 
 function SocialMedia() {
     const [copied, setCopied] = useState(false);
 
     const copyToClipboard = () => {
-        navigator.clipboard.writeText(linkTreeUrl);
+        navigator.clipboard.writeText(linkWebUrl);
         setCopied(true);
         setTimeout(() => setCopied(false), 2000);
     };
@@ -45,7 +45,7 @@ function SocialMedia() {
                     <p>שלחו את הקישור הזה לכל מי שצריך להצטרף לקרב:</p>
 
                     <div className="link-copy-box">
-                        <input type="text" value={linkTreeUrl} readOnly />
+                        <input type="text" value={linkWebUrl} readOnly />
                         <button onClick={copyToClipboard}>
                             <FontAwesomeIcon icon={faCopy} /> {copied ? 'הועתק!' : 'העתק'}
                         </button>
