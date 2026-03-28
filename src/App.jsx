@@ -2,11 +2,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
+import { Analytics } from '@vercel/analytics/react'; // <-- 1. Import Analytics
 
 // Components
 import ScrollToTop from './components/ScrollToTop';
 import Navbar from './components/Navbar';
-import Breadcrumbs from './components/Breadcrumbs'; // <-- MUST BE IMPORTED
+import Breadcrumbs from './components/Breadcrumbs';
 import FloatingSocialSidebar from './components/FloatingSocialSidebar';
 import BackToTop from './components/BackToTop';
 import Footer from './components/Footer';
@@ -46,6 +47,9 @@ function App() {
 
                 <Footer />
             </Router>
+
+            {/* 2. Mount Analytics outside the Router but inside the app */}
+            <Analytics />
         </HelmetProvider>
     );
 }

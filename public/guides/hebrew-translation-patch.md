@@ -5,7 +5,7 @@
 ## 📥 שלב 1: הורדת קובץ התרגום
 תחילה, הורידו את קובץ התרגום הרשמי של הקהילה למחשב שלכם:
 
-<a href="/resources/generals.csf" download className="button download-button" style="margin: 15px 0; display: inline-flex;">הורד את חבילת השפה (generals.csf)</a>
+<a href="/resources/generals.csf" download className="button download-button" style="margin: 15px 0; display: inline-flex;">הורד את חבילת השפה (גירסה 1)</a>
 
 ---
 

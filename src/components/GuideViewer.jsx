@@ -5,7 +5,8 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCopy, faCheck } from '@fortawesome/free-solid-svg-icons'; // <-- Import icons
+import { faCopy, faCheck } from '@fortawesome/free-solid-svg-icons';
+import { track } from '@vercel/analytics'; // <-- 1. Import the track function
 import SEO from './SEO';
 import guidesData from '../data/guides.json';
 
@@ -78,7 +79,30 @@ function GuideViewer() {
                 <table className="markdown-table" {...props} />
             </div>
       ),
-      pre: PreBlock // <-- Inject the new Copy Block renderer
+        pre: PreBlock,
+
+        // 2. Intercept <a> tags to add tracking
+        a: ({  href, children, ...props }) => {
+            const handleLinkClick = () => {
+                // Check if the link has a 'download' attribute OR links to a specific file extension
+                const isDownload = props.download || (href && href.match(/\.(csf|zip|rar|exe|pdf)$/i));
+
+                if (isDownload) {
+                    // Extract filename from the URL (e.g., "generals.csf")
+                    const fileName = href.split('/').pop() || 'unknown_file';
+
+                    // Send custom event to Vercel Analytics
+                    track('file_download', { file: fileName });
+                }
+            };
+
+            // Return the standard anchor tag, but with our injected onClick handler
+            return (
+                <a href={href} onClick={handleLinkClick} {...props}>
+                    {children}
+                </a>
+            );
+        }
     };
 
     return (
