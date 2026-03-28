@@ -1,5 +1,11 @@
 [
   {
+    "title": "חבילת שפה בעברית)",
+    "description": "התקינו את התרגום הקהילתי הראשון לעברית עבור C&C Generals Zero Hour.",
+    "guideName": "hebrew-translation-patch",
+    "category": "setup"
+  },
+  {
     "title": "מדריך התקנה (Steam)",
     "description": "המדריך המלא להתקנת המשחק בסטים, כולל תיקונים הכרחיים להפעלתו במערכות מודרניות.",
     "guideName": "steam-installation-main",

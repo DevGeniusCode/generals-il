@@ -3,9 +3,38 @@ import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import rehypeRaw from 'rehype-raw'; // <-- 1. Import the HTML parser
+import rehypeRaw from 'rehype-raw';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCopy, faCheck } from '@fortawesome/free-solid-svg-icons'; // <-- Import icons
 import SEO from './SEO';
 import guidesData from '../data/guides.json';
+
+// --- NEW: Custom Pre/Code Block Component for Copy Functionality ---
+const PreBlock = ({ children }) => {
+    const [copied, setCopied] = useState(false);
+
+    // Extract the raw text from the <code> child element
+    const textToCopy = children?.props?.children || '';
+
+    const handleCopy = () => {
+        navigator.clipboard.writeText(textToCopy);
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000); // Reset after 2 seconds
+    };
+
+    return (
+        <div className="code-block-wrapper">
+            <button
+                className={`copy-btn ${copied ? 'copied' : ''}`}
+                onClick={handleCopy}
+                title="העתק טקסט"
+            >
+                <FontAwesomeIcon icon={copied ? faCheck : faCopy} /> {copied ? 'הועתק!' : 'העתק'}
+            </button>
+            <pre>{children}</pre>
+        </div>
+    );
+};
 
 function GuideViewer() {
     const { guideName } = useParams();
@@ -48,7 +77,8 @@ function GuideViewer() {
             <div className="table-wrapper">
                 <table className="markdown-table" {...props} />
             </div>
-        )
+      ),
+      pre: PreBlock // <-- Inject the new Copy Block renderer
     };
 
     return (
@@ -63,7 +93,7 @@ function GuideViewer() {
 
             <ReactMarkdown
                 remarkPlugins={[remarkGfm]}
-                rehypePlugins={[rehypeRaw]} // <-- 2. Inject the HTML parser here
+                rehypePlugins={[rehypeRaw]}
                 components={customRenderers}
             >
                 {content}

@@ -3,8 +3,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faLanguage } from '@fortawesome/free-solid-svg-icons'; // <-- Import icon
 import resourcesData from '../data/resources.json';
-import { socialLinks } from '../data/socials'; // <-- Import centralized socials data
+import { socialLinks } from '../data/socials';
 
 function HeroSection() {
     // Dynamically fetch the primary installation guide
@@ -21,10 +22,15 @@ function HeroSection() {
                 </h1>
 
                 <div className="hero-cta">
-                    {/* Primary CTA for New Recruits */}
+                    {/* NEW: Hebrew Patch CTA */}
+                    <Link to="/guides/hebrew-translation-patch" className="button button-accent pulse-animation">
+                        <FontAwesomeIcon icon={faLanguage} size="lg" />
+                        חדש! שחקו בעברית! 🇮🇱
+                    </Link>
+
                     {mainInstallGuide && (
                         <Link to={mainInstallGuide.guideLink} className="button button-primary">
-                            מדריך התקנה ראשי (Steam)
+                            מדריך התקנה כללי (Steam)
                         </Link>
                     )}
 

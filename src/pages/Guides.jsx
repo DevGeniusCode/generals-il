@@ -2,11 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-    faDownload, faWrench, faGlobe, faServer,
-    faNetworkWired, faMap, faMapLocationDot,
-    faLayerGroup, faBookOpen
-} from '@fortawesome/free-solid-svg-icons';
+import { faDownload, faWrench, faGlobe, faServer, faNetworkWired, faMap, faMapLocationDot, faLayerGroup, faBookOpen, faLanguage } from '@fortawesome/free-solid-svg-icons';
 import { faSteam } from '@fortawesome/free-brands-svg-icons';
 import guidesData from '../data/guides.json';
 
@@ -16,8 +12,9 @@ function Guides() {
         {
             id: 'setup',
             title: 'רכישה, התקנה וטכני',
-            guides: ['steam', 'steam-installation-main', 'genpatcher'],
-            icons: { 'steam': faSteam, 'steam-installation-main': faDownload, 'genpatcher': faWrench }
+            guides: ['hebrew-translation-patch', 'steam', 'steam-installation-main', 'genpatcher'],
+            icons: { 'steam': faSteam, 'steam-installation-main': faDownload, 'genpatcher': faWrench, 'hebrew-translation-patch': faLanguage
+            }
         },
         {
             id: 'multiplayer',
