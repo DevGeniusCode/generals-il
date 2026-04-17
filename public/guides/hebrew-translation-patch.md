@@ -67,4 +67,3 @@ C:\Program Files (x86)\EA Games\Command & Conquer(tm) Generals Zero Hour
 
 > ⚠️ **הערה: פרויקט בתהליך (WIP)**
 > התרגום עדיין מתעדכן. נתקלתם בטעות? רוצים להציע ניסוח טוב יותר? הצטרפו אלינו ל[קהילת הדיסקורד](https://discord.gg/N7YHmTNmRp) או לקבוצת הוואטסאפ וקחו חלק בפרויקט!
-```
