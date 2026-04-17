@@ -12,8 +12,8 @@ function Guides() {
         {
             id: 'setup',
             title: 'רכישה, התקנה וטכני',
-            guides: ['hebrew-translation-patch', 'steam', 'steam-installation-main', 'genpatcher'],
-            icons: { 'steam': faSteam, 'steam-installation-main': faDownload, 'genpatcher': faWrench, 'hebrew-translation-patch': faLanguage
+            guides: ['steam-installation-main', 'genpatcher', 'hebrew-translation-patch', 'hebrew-issue'],
+            icons: {'steam-installation-main': faDownload, 'genpatcher': faWrench, 'hebrew-translation-patch': faLanguage, 'hebrew-issue': faWrench
             }
         },
         {

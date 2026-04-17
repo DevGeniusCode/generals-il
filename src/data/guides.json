@@ -48,6 +48,13 @@
     "subCategory": "multiplayer"
   },
   {
+    "title": "פתרון תקלות נתיב בעברית ו-OneDrive",
+    "description": "מה עושים כשיש קריסות בגלל נתיב מסמכים בעברית או OneDrive.",
+    "guideName": "hebrew-issue",
+    "category": "general",
+    "subCategory": "technical"
+  },
+  {
     "title": "סוגי מפות (Map Types)",
     "description": "סקירה של סוגי המפות: טורנירים, מפות קבוצות, AOD ומפות קהילתיות.",
     "guideName": "map-types",
